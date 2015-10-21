@@ -18,7 +18,6 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -26,29 +25,29 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
-    QAction *actionNovo;
-    QAction *actionAbrir;
     QAction *actionSimulador;
+    QAction *actionAbrir;
+    QAction *actionNovo;
     QWidget *centralWidget;
     QLabel *label;
     QMenuBar *menuBar;
     QMenu *menuArquivo;
     QMenu *menuSobre;
-    QToolBar *mainToolBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(556, 356);
-        MainWindow->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
+        MainWindow->setStyleSheet(QLatin1String("background-color: rgb(255, 255, 255);\n"
+"selection-background-color: rgb(172, 210, 255);"));
         MainWindow->setToolButtonStyle(Qt::ToolButtonTextOnly);
-        actionNovo = new QAction(MainWindow);
-        actionNovo->setObjectName(QStringLiteral("actionNovo"));
-        actionAbrir = new QAction(MainWindow);
-        actionAbrir->setObjectName(QStringLiteral("actionAbrir"));
         actionSimulador = new QAction(MainWindow);
         actionSimulador->setObjectName(QStringLiteral("actionSimulador"));
+        actionAbrir = new QAction(MainWindow);
+        actionAbrir->setObjectName(QStringLiteral("actionAbrir"));
+        actionNovo = new QAction(MainWindow);
+        actionNovo->setObjectName(QStringLiteral("actionNovo"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label = new QLabel(centralWidget);
@@ -63,14 +62,11 @@ public:
         menuSobre = new QMenu(menuBar);
         menuSobre->setObjectName(QStringLiteral("menuSobre"));
         MainWindow->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
 
         menuBar->addAction(menuArquivo->menuAction());
         menuBar->addAction(menuSobre->menuAction());
-        menuArquivo->addAction(actionNovo);
         menuArquivo->addAction(actionAbrir);
+        menuArquivo->addAction(actionNovo);
 
         retranslateUi(MainWindow);
 
@@ -80,9 +76,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "TDC Netwaok Simulator", 0));
-        actionNovo->setText(QApplication::translate("MainWindow", "Novo", 0));
-        actionAbrir->setText(QApplication::translate("MainWindow", "Abrir", 0));
         actionSimulador->setText(QApplication::translate("MainWindow", "Simulador", 0));
+        actionAbrir->setText(QApplication::translate("MainWindow", "Abrir", 0));
+        actionNovo->setText(QApplication::translate("MainWindow", "Novo", 0));
         label->setText(QString());
         menuArquivo->setTitle(QApplication::translate("MainWindow", "Arquivo", 0));
         menuSobre->setTitle(QApplication::translate("MainWindow", "Sobre", 0));

@@ -14,7 +14,8 @@
    <string>TDC Netwaok Simulator</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true">background-color: rgb(255, 255, 255);
+selection-background-color: rgb(172, 210, 255);</string>
   </property>
   <property name="toolButtonStyle">
    <enum>Qt::ToolButtonTextOnly</enum>
@@ -47,8 +48,8 @@
     <property name="title">
      <string>Arquivo</string>
     </property>
-    <addaction name="actionNovo"/>
     <addaction name="actionAbrir"/>
+    <addaction name="actionNovo"/>
    </widget>
    <widget class="QMenu" name="menuSobre">
     <property name="title">
@@ -58,17 +59,9 @@
    <addaction name="menuArquivo"/>
    <addaction name="menuSobre"/>
   </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <action name="actionNovo">
+  <action name="actionSimulador">
    <property name="text">
-    <string>Novo</string>
+    <string>Simulador</string>
    </property>
   </action>
   <action name="actionAbrir">
@@ -76,9 +69,9 @@
     <string>Abrir</string>
    </property>
   </action>
-  <action name="actionSimulador">
+  <action name="actionNovo">
    <property name="text">
-    <string>Simulador</string>
+    <string>Novo</string>
    </property>
   </action>
  </widget>
