@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QPixmap pix("C:/Users/user/Documents/GitHub/SimulaRede/tdc network images/tdc.jpg");
+    ui->label->setPixmap(pix);
 }
 
 MainWindow::~MainWindow()

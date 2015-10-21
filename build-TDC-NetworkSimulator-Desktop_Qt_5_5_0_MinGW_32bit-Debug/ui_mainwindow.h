@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -29,6 +30,7 @@ public:
     QAction *actionAbrir;
     QAction *actionSimulador;
     QWidget *centralWidget;
+    QLabel *label;
     QMenuBar *menuBar;
     QMenu *menuArquivo;
     QMenu *menuSobre;
@@ -38,7 +40,8 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(545, 356);
+        MainWindow->resize(556, 356);
+        MainWindow->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
         MainWindow->setToolButtonStyle(Qt::ToolButtonTextOnly);
         actionNovo = new QAction(MainWindow);
         actionNovo->setObjectName(QStringLiteral("actionNovo"));
@@ -48,10 +51,13 @@ public:
         actionSimulador->setObjectName(QStringLiteral("actionSimulador"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        label = new QLabel(centralWidget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(9, 9, 531, 291));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 545, 21));
+        menuBar->setGeometry(QRect(0, 0, 556, 21));
         menuArquivo = new QMenu(menuBar);
         menuArquivo->setObjectName(QStringLiteral("menuArquivo"));
         menuSobre = new QMenu(menuBar);
@@ -77,6 +83,7 @@ public:
         actionNovo->setText(QApplication::translate("MainWindow", "Novo", 0));
         actionAbrir->setText(QApplication::translate("MainWindow", "Abrir", 0));
         actionSimulador->setText(QApplication::translate("MainWindow", "Simulador", 0));
+        label->setText(QString());
         menuArquivo->setTitle(QApplication::translate("MainWindow", "Arquivo", 0));
         menuSobre->setTitle(QApplication::translate("MainWindow", "Sobre", 0));
     } // retranslateUi
