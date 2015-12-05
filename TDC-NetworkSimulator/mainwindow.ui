@@ -46,14 +46,14 @@ selection-background-color: rgb(172, 210, 255);</string>
    </property>
    <widget class="QMenu" name="menuArquivo">
     <property name="title">
-     <string>Arquivo</string>
+     <string>Cadastro</string>
     </property>
-    <addaction name="actionAbrir"/>
-    <addaction name="actionNovo"/>
+    <addaction name="actionEquipamentos"/>
+    <addaction name="actionComputadores"/>
    </widget>
    <widget class="QMenu" name="menuSobre">
     <property name="title">
-     <string>Sobre</string>
+     <string>Comunicacao</string>
     </property>
    </widget>
    <addaction name="menuArquivo"/>
@@ -64,14 +64,14 @@ selection-background-color: rgb(172, 210, 255);</string>
     <string>Simulador</string>
    </property>
   </action>
-  <action name="actionAbrir">
+  <action name="actionEquipamentos">
    <property name="text">
-    <string>Abrir</string>
+    <string>Equipamentos</string>
    </property>
   </action>
-  <action name="actionNovo">
+  <action name="actionComputadores">
    <property name="text">
-    <string>Novo</string>
+    <string>Computadores</string>
    </property>
   </action>
  </widget>

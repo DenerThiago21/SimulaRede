@@ -14,10 +14,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    sobredialog.cpp
+    frmcadequipamentos.cpp
 
 HEADERS  += mainwindow.h \
-    sobredialog.h
+    frmcadequipamentos.h
 
 FORMS    += mainwindow.ui \
-    sobredialog.ui
+    frmcadequipamentos.ui
