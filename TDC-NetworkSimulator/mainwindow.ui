@@ -55,6 +55,7 @@ selection-background-color: rgb(172, 210, 255);</string>
     <property name="title">
      <string>Comunicacao</string>
     </property>
+    <addaction name="actionEntre_PCs"/>
    </widget>
    <addaction name="menuArquivo"/>
    <addaction name="menuSobre"/>
@@ -72,6 +73,11 @@ selection-background-color: rgb(172, 210, 255);</string>
   <action name="actionComputadores">
    <property name="text">
     <string>Computadores</string>
+   </property>
+  </action>
+  <action name="actionEntre_PCs">
+   <property name="text">
+    <string>Entre PCs</string>
    </property>
   </action>
  </widget>

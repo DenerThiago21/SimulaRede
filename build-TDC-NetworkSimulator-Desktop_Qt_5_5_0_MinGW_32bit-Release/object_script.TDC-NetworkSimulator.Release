@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\frmcadequipamentos.o
+./release\equipamento.o
+./release\frmcadcomputadores.o
+./release\computador.o
+./release\frmcomunicacaopc.o
+./release\comunicacao.o
+./release\computadorcontroller.o
+./release\equipamentocontroller.o
+./release\moc_mainwindow.o
+./release\moc_frmcadequipamentos.o
+./release\moc_frmcadcomputadores.o
+./release\moc_frmcomunicacaopc.o
+);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>FrmCadEquipamentos</class>
- <widget class="QWidget" name="FrmCadEquipamentos">
+ <class>FrmCadComputadores</class>
+ <widget class="QWidget" name="FrmCadComputadores">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -16,10 +16,10 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>80</x>
      <y>20</y>
-     <width>311</width>
-     <height>31</height>
+     <width>251</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -30,7 +30,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Cadastro de Equipamentos de Rede</string>
+    <string>Cadastro de Computadores</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -43,20 +43,20 @@
     </rect>
    </property>
    <property name="text">
-    <string>Tipo</string>
+    <string>tipo</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>50</x>
      <y>120</y>
-     <width>31</width>
+     <width>16</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Marca</string>
+    <string>ip</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -64,12 +64,32 @@
     <rect>
      <x>30</x>
      <y>150</y>
-     <width>41</width>
+     <width>31</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>Modelo</string>
+    <string>Nome</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edIp">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>120</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="edNome">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>281</width>
+     <height>20</height>
+    </rect>
    </property>
   </widget>
   <widget class="QComboBox" name="cbTipo">
@@ -77,35 +97,15 @@
     <rect>
      <x>70</x>
      <y>90</y>
-     <width>301</width>
+     <width>281</width>
      <height>22</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="edMarca">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>120</y>
-     <width>301</width>
-     <height>20</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="edModelo">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>150</y>
-     <width>301</width>
-     <height>20</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="btCadastrar">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>280</x>
      <y>190</y>
      <width>75</width>
      <height>23</height>
@@ -115,10 +115,10 @@
     <string>Cadastrar</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Voltar">
+  <widget class="QPushButton" name="btVoltar">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>190</x>
      <y>190</y>
      <width>75</width>
      <height>23</height>
@@ -128,10 +128,10 @@
     <string>Voltar</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Limpar">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>100</x>
      <y>190</y>
      <width>75</width>
      <height>23</height>

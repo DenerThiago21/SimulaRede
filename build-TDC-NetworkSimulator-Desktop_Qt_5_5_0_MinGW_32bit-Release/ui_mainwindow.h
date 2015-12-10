@@ -28,6 +28,7 @@ public:
     QAction *actionSimulador;
     QAction *actionEquipamentos;
     QAction *actionComputadores;
+    QAction *actionEntre_PCs;
     QWidget *centralWidget;
     QLabel *label;
     QMenuBar *menuBar;
@@ -48,6 +49,8 @@ public:
         actionEquipamentos->setObjectName(QStringLiteral("actionEquipamentos"));
         actionComputadores = new QAction(MainWindow);
         actionComputadores->setObjectName(QStringLiteral("actionComputadores"));
+        actionEntre_PCs = new QAction(MainWindow);
+        actionEntre_PCs->setObjectName(QStringLiteral("actionEntre_PCs"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label = new QLabel(centralWidget);
@@ -67,6 +70,7 @@ public:
         menuBar->addAction(menuSobre->menuAction());
         menuArquivo->addAction(actionEquipamentos);
         menuArquivo->addAction(actionComputadores);
+        menuSobre->addAction(actionEntre_PCs);
 
         retranslateUi(MainWindow);
 
@@ -79,6 +83,7 @@ public:
         actionSimulador->setText(QApplication::translate("MainWindow", "Simulador", 0));
         actionEquipamentos->setText(QApplication::translate("MainWindow", "Equipamentos", 0));
         actionComputadores->setText(QApplication::translate("MainWindow", "Computadores", 0));
+        actionEntre_PCs->setText(QApplication::translate("MainWindow", "Entre PCs", 0));
         label->setText(QString());
         menuArquivo->setTitle(QApplication::translate("MainWindow", "Cadastro", 0));
         menuSobre->setTitle(QApplication::translate("MainWindow", "Comunicacao", 0));

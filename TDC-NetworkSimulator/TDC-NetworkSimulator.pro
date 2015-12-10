@@ -14,10 +14,26 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    frmcadequipamentos.cpp
+    frmcadequipamentos.cpp \
+    equipamento.cpp \
+    frmcadcomputadores.cpp \
+    computador.cpp \
+    frmcomunicacaopc.cpp \
+    comunicacao.cpp \
+    computadorcontroller.cpp \
+    equipamentocontroller.cpp
 
 HEADERS  += mainwindow.h \
-    frmcadequipamentos.h
+    frmcadequipamentos.h \
+    equipamento.h \
+    frmcadcomputadores.h \
+    computador.h \
+    frmcomunicacaopc.h \
+    comunicacao.h \
+    computadorcontroller.h \
+    equipamentocontroller.h
 
 FORMS    += mainwindow.ui \
-    frmcadequipamentos.ui
+    frmcadequipamentos.ui \
+    frmcadcomputadores.ui \
+    frmcomunicacaopc.ui

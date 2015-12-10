@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'mainwindow.h'
+** Meta object code from reading C++ file 'frmcadcomputadores.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.5.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../qtProjects/SimulaRede/TDC-NetworkSimulator/mainwindow.h"
+#include "../../../../qtProjects/SimulaRede/TDC-NetworkSimulator/frmcadcomputadores.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'mainwindow.h' doesn't include <QObject>."
+#error "The header file 'frmcadcomputadores.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.5.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,31 +18,30 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_MainWindow_t {
+struct qt_meta_stringdata_FrmCadComputadores_t {
     QByteArrayData data[5];
-    char stringdata0[105];
+    char stringdata0[85];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_FrmCadComputadores_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
+static const qt_meta_stringdata_FrmCadComputadores_t qt_meta_stringdata_FrmCadComputadores = {
     {
-QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 31), // "on_actionEquipamentos_triggered"
-QT_MOC_LITERAL(2, 43, 0), // ""
-QT_MOC_LITERAL(3, 44, 31), // "on_actionComputadores_triggered"
-QT_MOC_LITERAL(4, 76, 28) // "on_actionEntre_PCs_triggered"
+QT_MOC_LITERAL(0, 0, 18), // "FrmCadComputadores"
+QT_MOC_LITERAL(1, 19, 22), // "on_btCadastrar_clicked"
+QT_MOC_LITERAL(2, 42, 0), // ""
+QT_MOC_LITERAL(3, 43, 19), // "on_btVoltar_clicked"
+QT_MOC_LITERAL(4, 63, 21) // "on_pushButton_clicked"
 
     },
-    "MainWindow\0on_actionEquipamentos_triggered\0"
-    "\0on_actionComputadores_triggered\0"
-    "on_actionEntre_PCs_triggered"
+    "FrmCadComputadores\0on_btCadastrar_clicked\0"
+    "\0on_btVoltar_clicked\0on_pushButton_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_MainWindow[] = {
+static const uint qt_meta_data_FrmCadComputadores[] = {
 
  // content:
        7,       // revision
@@ -68,43 +67,43 @@ static const uint qt_meta_data_MainWindow[] = {
        0        // eod
 };
 
-void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void FrmCadComputadores::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        MainWindow *_t = static_cast<MainWindow *>(_o);
+        FrmCadComputadores *_t = static_cast<FrmCadComputadores *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_actionEquipamentos_triggered(); break;
-        case 1: _t->on_actionComputadores_triggered(); break;
-        case 2: _t->on_actionEntre_PCs_triggered(); break;
+        case 0: _t->on_btCadastrar_clicked(); break;
+        case 1: _t->on_btVoltar_clicked(); break;
+        case 2: _t->on_pushButton_clicked(); break;
         default: ;
         }
     }
     Q_UNUSED(_a);
 }
 
-const QMetaObject MainWindow::staticMetaObject = {
-    { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow.data,
-      qt_meta_data_MainWindow,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject FrmCadComputadores::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_FrmCadComputadores.data,
+      qt_meta_data_FrmCadComputadores,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *MainWindow::metaObject() const
+const QMetaObject *FrmCadComputadores::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *MainWindow::qt_metacast(const char *_clname)
+void *FrmCadComputadores::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata0))
-        return static_cast<void*>(const_cast< MainWindow*>(this));
-    return QMainWindow::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_FrmCadComputadores.stringdata0))
+        return static_cast<void*>(const_cast< FrmCadComputadores*>(this));
+    return QWidget::qt_metacast(_clname);
 }
 
-int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int FrmCadComputadores::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

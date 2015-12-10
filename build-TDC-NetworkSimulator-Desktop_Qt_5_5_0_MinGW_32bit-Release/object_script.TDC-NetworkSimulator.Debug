@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\frmcadequipamentos.o
+./debug\equipamento.o
+./debug\frmcadcomputadores.o
+./debug\computador.o
+./debug\frmcomunicacaopc.o
+./debug\comunicacao.o
+./debug\computadorcontroller.o
+./debug\equipamentocontroller.o
+./debug\moc_mainwindow.o
+./debug\moc_frmcadequipamentos.o
+./debug\moc_frmcadcomputadores.o
+./debug\moc_frmcomunicacaopc.o
+);

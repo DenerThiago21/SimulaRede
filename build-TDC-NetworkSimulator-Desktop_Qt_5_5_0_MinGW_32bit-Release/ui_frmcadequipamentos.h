@@ -33,6 +33,8 @@ public:
     QLineEdit *edMarca;
     QLineEdit *edModelo;
     QPushButton *btCadastrar;
+    QPushButton *Voltar;
+    QPushButton *Limpar;
 
     void setupUi(QWidget *FrmCadEquipamentos)
     {
@@ -68,6 +70,12 @@ public:
         btCadastrar = new QPushButton(FrmCadEquipamentos);
         btCadastrar->setObjectName(QStringLiteral("btCadastrar"));
         btCadastrar->setGeometry(QRect(300, 190, 75, 23));
+        Voltar = new QPushButton(FrmCadEquipamentos);
+        Voltar->setObjectName(QStringLiteral("Voltar"));
+        Voltar->setGeometry(QRect(220, 190, 75, 23));
+        Limpar = new QPushButton(FrmCadEquipamentos);
+        Limpar->setObjectName(QStringLiteral("Limpar"));
+        Limpar->setGeometry(QRect(140, 190, 75, 23));
 
         retranslateUi(FrmCadEquipamentos);
 
@@ -82,6 +90,8 @@ public:
         label_3->setText(QApplication::translate("FrmCadEquipamentos", "Marca", 0));
         label_4->setText(QApplication::translate("FrmCadEquipamentos", "Modelo", 0));
         btCadastrar->setText(QApplication::translate("FrmCadEquipamentos", "Cadastrar", 0));
+        Voltar->setText(QApplication::translate("FrmCadEquipamentos", "Voltar", 0));
+        Limpar->setText(QApplication::translate("FrmCadEquipamentos", "Limpar", 0));
     } // retranslateUi
 
 };
